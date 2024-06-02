@@ -1,0 +1,23 @@
+*{
+    font-size: 2rem;
+}
+
+.listConfig {
+    padding: 10px;
+    display: flex;
+    border-radius: 10px;
+    background-color: var(--bg1);
+}
+
+input {
+    background-color: var(--bg2);
+    margin-right: 10px;
+    width: 400px;
+}
+
+.btnContainer {
+    width: 100%;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr repeat(3, auto);
+}

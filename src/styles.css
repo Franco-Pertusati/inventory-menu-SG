@@ -1,1 +1,110 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --bg1: #eeeeee;
+    --bg2: #FFFDED;
+    --main-color: #ABE8BE;
+    --selected: #88cf9e;
+    --content: #2f2f2f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 62.5%;
+    color: var(--content);
+}
+
+button {
+    border-style: none;
+    background-color: var(--main-color);
+    padding: 10px 10px;
+    font-size: 2rem;
+    border-radius: 10px;
+    transition: all ease .3s;
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.4);
+}
+
+input {
+    padding: 10px;
+    border-style: none;
+    border-radius: 10px;
+    font-size: 2rem;
+    background-color: var(--bg1);
+}
+
+.listInput {
+    width: 100%;
+}
+
+input:focus {
+    outline: solid 2px var(--main-color);
+    box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.4);
+}
+
+select {
+    padding: 10px;
+    width: 100%;
+    font-size: 2rem;
+    border-radius: 10px;
+    border-style: none;
+}
+
+select:focus {
+    outline: solid 2px var(--main-color);
+    box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.4);
+}
+
+h2 {
+    font-size: 3.8rem;
+    text-align: center;
+}
+
+nav {
+    margin: 0 auto;
+    width: fit-content;
+    display: flex;
+}
+
+nav button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border-radius: 100px;
+    background-color: var(--bg2);
+}
+
+nav button:hover {
+    background-color: var(--main-color);
+    box-shadow: none;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.win {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--bg2);
+    box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.4);
+    font-size: 2rem;
+}
+
+.inputPlusBtn {
+    display: grid;
+    grid-template-columns: 1fr 44px;
+    gap: 10px;
+}
+
+.selectedBtn {
+    outline: solid 2px var(--selected);
+    box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.4)inset;
+}

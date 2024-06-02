@@ -1,0 +1,7 @@
+.groupsContainer {
+    height: calc(100vh - 130px);
+    display: grid;
+    grid-template-columns: 1fr 500px;
+    grid-template-rows: 1fr;
+    column-gap: 10px;
+}
