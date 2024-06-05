@@ -1,9 +1,11 @@
 :root {
-    --bg1: #eeeeee;
-    --bg2: #FFFDED;
-    --main-color: #ABE8BE;
-    --selected: #88cf9e;
-    --content: #2f2f2f;
+    --bg1:          #f8f9fa;
+    --bg2:          #e9ecef;
+    --bg3:          #dee2e6;
+    --main-color:   #F2CC8F;
+    --selected:     #ff9172;
+    --unabled:      #dee2e6;
+    --content:      #2f2f2f;
 }
 
 * {
@@ -26,7 +28,8 @@ button {
 
 button:hover {
     cursor: pointer;
-    box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.4);
+    box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.2);
+    background-color: var(--selected);
 }
 
 input {
@@ -34,7 +37,7 @@ input {
     border-style: none;
     border-radius: 10px;
     font-size: 2rem;
-    background-color: var(--bg1);
+    background-color: var(--bg3);
 }
 
 .listInput {
@@ -43,7 +46,8 @@ input {
 
 input:focus {
     outline: solid 2px var(--main-color);
-    box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.4);
+    background-color: var(--bg1);
+    box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.2);
 }
 
 select {
@@ -52,15 +56,20 @@ select {
     font-size: 2rem;
     border-radius: 10px;
     border-style: none;
+    background-color: var(--bg3);
 }
 
 select:focus {
     outline: solid 2px var(--main-color);
-    box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.4);
+    box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.2);
+}
+
+option {
+    font-size: 2rem;
 }
 
 h2 {
-    font-size: 3.8rem;
+    font-size: 2.8rem;
     text-align: center;
 }
 
@@ -94,7 +103,7 @@ nav button:hover {
     padding: 10px;
     border-radius: 10px;
     background-color: var(--bg2);
-    box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.4);
+    box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.2);
     font-size: 2rem;
 }
 
@@ -106,5 +115,12 @@ nav button:hover {
 
 .selectedBtn {
     outline: solid 2px var(--selected);
-    box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.4)inset;
+}
+
+.firstPanelItem {
+    margin: 22px 0;
+}
+
+.panelTitle {
+    margin: 12px 0;
 }

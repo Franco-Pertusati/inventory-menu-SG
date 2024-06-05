@@ -6,13 +6,19 @@
     padding: 10px;
     display: flex;
     border-radius: 10px;
-    background-color: var(--bg1);
 }
 
 input {
     background-color: var(--bg2);
     margin-right: 10px;
-    width: 400px;
+    width: 100%;
+    border-bottom: solid 2px var(--main-color);
+    border-radius: 0px;
+}
+
+input:focus {
+    border: none;
+    border-radius: 10px;
 }
 
 .btnContainer {

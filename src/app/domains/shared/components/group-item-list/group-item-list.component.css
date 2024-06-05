@@ -1,0 +1,56 @@
+.group {
+    display: grid;
+    grid-template-columns: 24px 1fr 24px;
+    height: 44px;
+    place-items: center;
+    font-size: 2rem;
+    background-color: var(--main-color);
+    box-shadow: none;
+}
+
+.group svg {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+.group h2 {
+    font-size: 2rem;
+}
+
+.moreGroupOptions {
+    width: 146px;
+    position: absolute;
+    transform: translate(-160px, -15px);
+    height: auto;
+    background-color: var(--bg1);
+    z-index: 1;
+}
+
+.moreGroupOptions span {
+    font-size: 2rem;
+    color: var(--white-smoke);
+}
+
+.moreGroupOptions button {
+    width: 100%;
+    font-size: 2rem;
+}
+
+.unabled {
+    text-decoration: line-through;
+    background-color: var(--unabled);
+}
+
+.placeholderTutorial {
+    font-size: 3rem;
+}
+
+.editingInput {
+    height: 44px;
+    border: solid 2px var(--selected);
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.4);
+    outline: none;
+}

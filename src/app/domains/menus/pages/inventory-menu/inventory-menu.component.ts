@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { GroupsComponent } from './components/groups/groups.component';
+import { GroupsComponent } from './groups/groups.component';
 
 @Component({
   selector: 'app-inventory-menu',
