@@ -13,7 +13,7 @@ import { CommonModule } from '@angular/common';
 })
 export class GroupItemListComponent implements OnInit {
   private groupService = inject(GroupService);
-  groups!: WritableSignal<Group[]>;
+  groups!: WritableSignal<Group[]>;  
 
   ngOnInit(): void {
     this.groups = this.groupService.getGroups();

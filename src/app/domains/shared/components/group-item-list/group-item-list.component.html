@@ -6,7 +6,7 @@
     }
     @for (group of groups(); track group; let i = $index) {
     <div class="group mb10 win" [class.unabled]="!group.enabled">
-        <span>
+        <span (click)="group.listExpanded = !group.listExpanded" [class.spin90]="group.listExpanded">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                 class="bi bi-caret-right-fill" viewBox="0 0 16 16">
                 <path
@@ -36,5 +36,19 @@
             </div>
             }
         </span>
+        @if (group.listExpanded) {
+        <div class="groupProductsList">
+            @for (product of group.products; track product; let i = $index) {
+            <div class="product">
+                <span>{{product.name}}</span>
+                <span>Price: {{product.price}}</span>
+                <span>Cost: {{product.cost}}</span>
+                <span>Ingredients: 0</span>
+            </div>
+            } @empty {
+            <span>This group has no products</span>
+            }
+        </div>
+        }
     </div>
     }

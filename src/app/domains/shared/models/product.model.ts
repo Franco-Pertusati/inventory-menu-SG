@@ -3,6 +3,7 @@ export interface Product {
     price: number;
     cost: number;
     code: string;
+    ingredients: object;
     optionsDisplayed?: boolean;
     editingName?: boolean;
     editingPrice?: boolean;

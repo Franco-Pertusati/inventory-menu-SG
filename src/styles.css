@@ -117,10 +117,6 @@ nav button:hover {
     outline: solid 2px var(--selected);
 }
 
-.firstPanelItem {
-    margin: 22px 0;
-}
-
 .panelTitle {
     margin: 12px 0;
 }
